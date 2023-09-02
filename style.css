@@ -365,7 +365,69 @@ a:active {
 }
 
 
-/* Medium devices (tablets, less/equal than 1024px) */
+/********* activités à Marseille*********/
+.activites-marseille {
+    margin-top: 50px;
+}
+
+.activites-marseille h1 {
+    padding-left: 30px;
+}
+
+.activites-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 30px;
+    
+}
+.activites-cards img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-a {
+    background-color: white;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    border-radius: 20px;
+    width: 300px;
+}
+.card-a h3 {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+/********** Footer ***********/
+
+.footer-lists {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F2F2F2;
+    
+}
+.list {
+    list-style: none;
+    padding-left: 30px;
+    padding-top: 10px;
+   
+}
+
+footer p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer ul {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/*** Medium devices (tablets, less/equal than 1024px) ****/
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
@@ -399,9 +461,13 @@ a:active {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    
+    /******* Activités à Marseille (medium devices) ******/
+
+
 }
 
-/* Small devices (phones, less than 768px) */
+/*** Small devices (phones, less than 768px) ***/
 @media (max-width: 767.98px) {
     Body {
         overflow-x: hidden;
@@ -607,6 +673,10 @@ a:active {
     flex-direction: column;
     justify-content: space-between;
 }
+
+
+
+/********** Activités à Marseille (small devices)********/
 
 
 
