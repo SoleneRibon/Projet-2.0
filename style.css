@@ -249,10 +249,11 @@ a:active {
 }
 
 .hebergements-card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 
+   
 }
 
 .section-title {
@@ -266,9 +267,8 @@ a:active {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 240px;
-
-
+    width: 90%;
+    
 }
 
 .hebergements-card img {
@@ -362,42 +362,45 @@ a:active {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
 }
 
 
 /********* activités à Marseille*********/
-.activites-marseille {
-    margin-top: 50px;
+
+
+
+.activites-marseille h2 {
+    padding-left: 30px;
+    margin-bottom: 40px;
 }
 
-.activites-marseille h1 {
-    padding-left: 30px;
-}
 
 .activites-cards {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 30px;
     
 }
 .activites-cards img {
     width: 100%;
     height: 380px;
     object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
 }
 .card-a {
     background-color: white;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     border-radius: 20px;
-    width: 300px;
 }
 .card-a h3 {
     padding-top: 15px;
     padding-left: 15px;
     padding-bottom: 15px;
+}
+.activites-cards a {
+    width: 25%;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 /********** Footer ***********/
@@ -461,9 +464,12 @@ footer ul {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    /******* hébergement à Marseille (medium devices)*****/
+    
+    
     
     /******* Activités à Marseille (medium devices) ******/
-
+  
 
 }
 
@@ -580,6 +586,7 @@ footer ul {
 
     .hebergements-Marseille {
         order: 2;
+        margin: 0px;
     }
 
     section {
@@ -593,13 +600,21 @@ footer ul {
     }
 
     .hebergements-card {
-        width: 100% !important;
-        flex-wrap: nowrap;
-        flex-direction: column;
-
+        
+     width: 100%;
+    display: flex;
+    flex-direction: column;
+        
+    }
+    .hebergements-card a {
+        width: 100%; 
+        margin: 0px !important;
+        
     }
     .card {
         width: 100%;
+        padding: 0px;
+        
     }
     .du-port {
         order: 1;
@@ -662,7 +677,7 @@ footer ul {
     width: 100%;
     display: grid;
     grid-template-columns: 1 1fr;
-    gap: 35px;
+    gap: 10px;
 
 }
 
@@ -678,7 +693,29 @@ footer ul {
 
 /********** Activités à Marseille (small devices)********/
 
+.activites-cards {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 60px;
+    
+    
+}
+.activites-cards a {
+    width: 100%;
+    height: 25%;
+    margin-top: 15px;
+}
+.activites-cards img{
+    height: 124px;
+  }
 
 
+/*********footer (small devices)**********/
+
+.footer-lists {
+    display: flex;
+    flex-direction: column;
+}
 
 }
