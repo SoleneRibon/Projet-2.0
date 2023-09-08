@@ -457,10 +457,10 @@ footer ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+       
     }
-
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -469,6 +469,10 @@ footer ul {
 
     .populaires-cards .card-subtitle {
         font-size: 13px;
+    }
+
+    .card-p {
+        width: 30%;
     }
 
     /*******filtres(medium devices)*****/
