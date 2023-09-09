@@ -376,7 +376,7 @@ input:focus {
 
 }
 
-.title-activity-card {
+.card-a h3 {
     height: 30px;
     font-size: 16px;
     display: flex;
@@ -420,7 +420,7 @@ input:focus {
 
 }
 
-.list {
+.footer-lists li {
     list-style: none;
     padding-left: 30px;
     padding-top: 10px;
@@ -469,7 +469,7 @@ footer ul {
         font-size: 14px;
     }
 
-    .popular-cards .card-subtitle {
+    .popular-cards .card-txt p {
         font-size: 13px;
     }
 
@@ -486,7 +486,7 @@ footer ul {
 
 
 
-    /******* Activités à Marseille (medium devices) ******/
+    /******* cards Activités à Marseille (medium devices) ******/
 
     .activities-cards img {
         height: 211px;
@@ -600,7 +600,7 @@ footer ul {
     }
 
 
-    /********* hebergements(small devices)********/
+    /*********cards hebergements(small devices)********/
 
     .accomodations-Marseille {
         order: 2;
@@ -661,7 +661,7 @@ footer ul {
         order: 2;
     }
 
-    /***********Populaire (small devices)**********/
+    /*********** cards Populaire (small devices)**********/
 
     .popular {
         width: 100%;
@@ -721,7 +721,7 @@ footer ul {
     }
 
 
-    /********** Activités à Marseille (small devices)********/
+    /********** cards Activités à Marseille (small devices)********/
 
     .activities-cards {
         display: flex;
