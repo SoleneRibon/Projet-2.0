@@ -27,7 +27,7 @@ a {
     text-decoration: none;
 }
 
-/****** Header **********/
+/*************** Header *****************/
 header {
     display: flex;
     flex-direction: row;
@@ -45,14 +45,14 @@ header {
     height: 19px;
 }
 
-.hebergements-activites {
+.accomodations-activities{
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     list-style: none;
     
 }
-.hebergements {
+.accomodations {
     margin-right: 50px;
     
 }
@@ -68,13 +68,11 @@ header a:hover {
 }
 
 .top-title-1 {
-    font-weight: 700px;
     font-size: 22px;
     margin-top: 60px;
 }
 
 .top-title-2 {
-    font-weight: 400px;
     font-size: 16px;
     margin-top: 7px;
 }
@@ -99,7 +97,7 @@ header a:hover {
     padding-top: 15px;
 }
 
-.champ-localisation {
+input {
     border: 1px #f2f2f2 solid;
     border-right: #0065FC;
     text-align: center;
@@ -127,7 +125,7 @@ header a:hover {
 
 }
 
-.champ-localisation:focus {
+input:focus {
     outline: none;
 }
 
@@ -142,25 +140,25 @@ header a:hover {
     margin-top: 40px;
 }
 
-.p-filter {
+.filters p {
     font-weight: bold;
     margin: 13px;
     font-size: 18px;
 }
 
-.list-filters {
+.filters ul {
     list-style: none;
     display: flex;
 
 }
 
 
-.filters-button :hover {
+.filters li :hover {
     background-color: #DEEBFF;
 }
 
 
-.filters-btn {
+.filters button {
     background-color: white;
     border: none;
     margin-left: 5px;
@@ -199,20 +197,20 @@ header a:hover {
     justify-content: center;
 }
 
-.p-info {
+.info p {
     margin-left: 15px;
     margin-top: 8px;
 
 }
 
-/**********hebergements-and-populaires*********/
+/**********accomodations-and-populars*********/
 
-.hebergements-and-populaires {
+.accomodations-and-populars {
     display: flex;
     justify-content: space-between;
 }
 
-.hebergements-and-populaires section {
+.accomodations-and-populars section {
     background-color: #F2F2F2;
     border-radius: 20px;
     padding: 30px;
@@ -228,12 +226,12 @@ header a:hover {
     font-weight: 700;
 }
 
-/**********Card Hébergement à Marseille********/
-.hebergements-Marseille {
+/**********Cards Hébergement à Marseille********/
+.accomodations-Marseille {
     width: 65%;
 }
 
-.hebergements-card {
+.accomodations-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
@@ -241,7 +239,7 @@ header a:hover {
 
 }
 
-.section-title {
+.accomodations-Marseille h1 {
 
     font-size: 22px;
 
@@ -256,7 +254,7 @@ header a:hover {
 
 }
 
-.hebergements-card img {
+.accomodations-card img {
     width: 100%;
     height: 124px;
     border-top-left-radius: 20px;
@@ -264,12 +262,12 @@ header a:hover {
     object-fit: cover;
 }
 
-.card-title {
+.card-content h3 {
     font-size: 16px;
 }
 
 
-.hebergements-card .card {
+.accomodations-card .card {
     margin-top: 33px;
 }
 
@@ -291,7 +289,7 @@ header a:hover {
 }
 
 
-.hebergements-btn {
+.accomodations-btn {
     padding-top: 30px;
     font-size: 18px;
     font-weight: bold;
@@ -300,9 +298,9 @@ header a:hover {
 
 
 
-/**********Les plus populaires***********/
+/**********cards les plus populaires***********/
 
-.populaires {
+.popular {
     width: 32%;
     display: flex;
     flex-direction: column;
@@ -310,11 +308,14 @@ header a:hover {
 }
 
 
-.populaires-title {
+.popular-title {
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
 
+}
+.popular-title h2 {
+    font-size: 22px;
 }
 
 .card-p a {
@@ -342,9 +343,9 @@ header a:hover {
 
 }
 
-.populaires-cards {
+.popular-cards {
     display: grid;
-    grid-template-columns: 1 1fr;
+    grid-template-columns: 1fr;
     gap: 35px;
 
 }
@@ -358,18 +359,19 @@ header a:hover {
 }
 
 
-/********* activités à Marseille*********/
+/********* cards activités à Marseille*********/
 
 
 
-.activites-marseille h2 {
+.activities-marseille h2 {
     padding-left: 30px;
     margin-bottom: 40px;
     margin-top: 20px;
+    font-size: 22px;
 }
 
 
-.activites-cards {
+.activities-cards {
     display: flex;
 
 }
@@ -382,7 +384,7 @@ header a:hover {
 
 }
 
-.activites-cards img {
+.activities-cards img {
     width: 100%;
     height: 380px;
     object-fit: cover;
@@ -401,7 +403,7 @@ header a:hover {
     padding-bottom: 15px;
 }
 
-.activites-cards a {
+.activities-cards a {
     width: 25%;
     margin-left: 20px;
     margin-right: 20px;
@@ -438,36 +440,36 @@ footer ul {
 
 /*** Medium devices (tablets, less/equal than 1024px) ****/
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
+    .accomodations-and-populars {
         flex-direction: column;
         display: flex;
     }
 
-    .hebergements-Marseille {
+    .accomodations-Marseille {
         width: 100%;
     }
 
 
-    .populaires {
+    .popular {
         width: 100%;
         margin-top: 50px;
     }
 
-    .populaires-cards {
+    .popular-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
        
     }
-    .populaires-cards a {
+    .popular-cards a {
         width: 100%;
     }
 
-    .populaires-cards .card-title {
+    .popular-cards .card-content h3 {
         font-size: 14px;
     }
 
-    .populaires-cards .card-subtitle {
+    .popular-cards .card-subtitle {
         font-size: 13px;
     }
 
@@ -486,11 +488,11 @@ footer ul {
 
     /******* Activités à Marseille (medium devices) ******/
 
-    .activites-cards img {
+    .activities-cards img {
         height: 211px;
     }
 
-    .activites-cards a {
+    .activities-cards a {
         padding: 0px;
     }
 
@@ -526,19 +528,19 @@ footer ul {
 
     }
 
-    .hebergements-activites {
+    .accomodations-activities {
         width: 100vw;
         display: flex;
         justify-content: center;
     }
 
-    .hebergements {
+    .accomodations {
         width: 100%;
         margin-right: 0px;
         
      }
 
-    .activites {
+    .activities {
         width: 100%;
         margin-right: 0px;
         
@@ -572,12 +574,7 @@ footer ul {
         right: 15px;
     }
 
-    .champ-localisation {
-        z-index: 1;
-        position: relative;
-        width: 100%;
-    }
-
+  
 
 
 
@@ -589,7 +586,7 @@ footer ul {
         flex-direction: column;
     }
 
-    .list-filters {
+    .filters ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
@@ -597,7 +594,7 @@ footer ul {
 
     }
 
-    .filters-btn {
+    .filters button {
         width: 100%;
         margin: 0px;
     }
@@ -605,7 +602,7 @@ footer ul {
 
     /********* hebergements(small devices)********/
 
-    .hebergements-Marseille {
+    .accomodations-Marseille {
         order: 2;
         margin: 0px;
     }
@@ -615,12 +612,12 @@ footer ul {
 
     }
 
-    .hebergements-and-populaires .hebergements-Marseille {
+    .accomodations-and-populars .accomodations-Marseille {
         background-color: white;
 
     }
 
-    .hebergements-card {
+    .accomodations-card {
 
         width: 100%;
         display: flex;
@@ -628,7 +625,7 @@ footer ul {
 
     }
 
-    .hebergements-card a {
+    .accomodations-card a {
         width: 100%;
         margin: 0px !important;
 
@@ -666,7 +663,7 @@ footer ul {
 
     /***********Populaire (small devices)**********/
 
-    .populaires {
+    .popular {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -674,7 +671,7 @@ footer ul {
     }
 
 
-    .populaires-title {
+    .popular-title {
         display: flex;
         justify-content: space-between;
         margin-bottom: 30px;
@@ -703,7 +700,7 @@ footer ul {
 
     }
 
-    .populaires-cards {
+    .popular-cards {
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -726,7 +723,7 @@ footer ul {
 
     /********** Activités à Marseille (small devices)********/
 
-    .activites-cards {
+    .activities-cards {
         display: flex;
         flex-direction: column;
         margin-left: 20px;
@@ -735,13 +732,13 @@ footer ul {
 
     }
 
-    .activites-cards a {
+    .activities-cards a {
         width: 100%;
         height: 25%;
         margin-top: 15px;
     }
 
-    .activites-cards img {
+    .activities-cards img {
         height: 124px;
     }
 
@@ -763,7 +760,7 @@ footer ul {
     
     /****** filters ******/
 
-    .filters-btn {
+    .filters button {
         height: 60px;
     }
 }
