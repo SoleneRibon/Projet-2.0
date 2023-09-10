@@ -81,7 +81,7 @@ header a:hover {
 
 .form {
     display: flex;
-    height: 50px !important;
+    height: 50px;
     margin-top: 40px;
 }
 
@@ -234,7 +234,7 @@ input:focus {
 .accomodations-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
+    gap: 25px;
 
 
 }
@@ -250,7 +250,7 @@ input:focus {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -492,9 +492,6 @@ footer ul {
         height: 211px;
     }
 
-    .activities-cards a {
-        padding: 0px;
-    }
 
 
 }
@@ -540,10 +537,9 @@ footer ul {
 
     .activities {
         width: 100%;
-        margin-right: 0px;
+       
         
-        
- }
+}
     header a {
         width: 100%;
         display: flex;
@@ -620,12 +616,13 @@ footer ul {
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 0px
 
     }
 
     .accomodations-card a {
         width: 100%;
-        margin: 0px !important;
+        
 
     }
 
@@ -633,6 +630,9 @@ footer ul {
         width: 100%;
         padding: 0px;
 
+    }
+    .accomodations-card .card  {
+        margin-top: 20px;
     }
 
     .du-port {
@@ -702,6 +702,7 @@ footer ul {
         width: 100%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
 
     }
 
