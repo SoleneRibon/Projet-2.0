@@ -574,6 +574,10 @@ footer ul {
         width: 100%;
     }
 
+    .circle {
+        width: 25px;
+    }
+
   
 
 
@@ -767,5 +771,9 @@ footer ul {
 
     .filters button {
         height: 60px;
+    }
+
+    .circle {
+        width: 30px;
     }
 }
