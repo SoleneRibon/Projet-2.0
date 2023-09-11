@@ -515,7 +515,9 @@ footer ul {
     }
 
     .top-of-page {
-        padding: 0 20px;
+        padding-left: 20px;
+        padding-right: 20px ;
+
     }
 
     .logo-booki {
@@ -565,7 +567,11 @@ footer ul {
         box-shadow: 0px 5px 3px #d9d9d9;
         z-index: 2;
         position: relative;
-        right: 15px;
+        right: 10px;
+    }
+    
+    input {
+        width: 100%;
     }
 
   
